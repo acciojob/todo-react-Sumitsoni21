@@ -22,7 +22,7 @@ const App = () => {
  }
   
   return (
-      <div className="app">
+       <div className="app">
         
        <h2>To-Do List</h2>
        <div className="inpSection">
@@ -31,7 +31,7 @@ const App = () => {
     </div>
       <Todo tasks={tasks} handleDelete={handleDelete} /> 
        
-       </div>}
+       
      
       </div>
   )
