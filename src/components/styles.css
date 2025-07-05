@@ -1,1 +1,23 @@
+.app{
+  
+  text-align: center;
+  background: white;
+}
 
+
+li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.btn{
+   background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
