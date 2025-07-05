@@ -2,16 +2,19 @@
 
 import react, { useState } from "react";
 
-function Todo = ({tasks, handleDelete}) => {
 
+const  Todo = ({tasks, handleDelete}) => {
+
+return (
    <ul className="todoList" >
-     {tasks.map((task) => (
+     {tasks.map((task, index) => (
        <li>
          <p>{task}</p>
          <button className="btn"  onClick={()=>handleDelete(index)}>Delete</button>
        </li>
-  )}
-  </ul>
+  ))}
+  </ul>)
 }
+
 
 export default Todo;
