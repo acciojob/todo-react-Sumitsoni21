@@ -1,5 +1,6 @@
 
 import React from "react";
+import Todo from "./Todo.js";
 import './../styles/App.css';
 
 const App = () => {
@@ -20,17 +21,14 @@ const App = () => {
  }
   
   return (
-      <div>
+      <div className="app">
         
        <h2>To-Do List</h2>
-       
+       <div className="inpSection">
        <input type="text" value={task} onChange={handleChange}/>
        <button onClick={handleAddTask}>Add Todo</button>
-       
-       {tasks && <div>   {tasks.map((task,index) => <div>
-         <p>{task}</p>
-         <button onClick={()=>handleDelete(index)}>Delete</button>
-       </div>)}
+    </div>
+      <Todo tasks={tasks} handleDelete={handleDelete} /> 
        
        </div>}
      
