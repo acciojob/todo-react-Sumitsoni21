@@ -2,6 +2,7 @@
 import React from "react";
 import Todo from "./Todo.js";
 import './../styles/App.css';
+import "./styles.css";
 
 const App = () => {
   const [task, setTask] = useState('');
